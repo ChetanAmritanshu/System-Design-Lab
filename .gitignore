@@ -1,0 +1,14 @@
+node_modules/
+.next/
+out/
+.env*
+*.tsbuildinfo
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+npm-debug.log*
+
+# Source study material belongs to ChetanAmritanshu/High-Level-Design.
+*.docx
+*.pdf
