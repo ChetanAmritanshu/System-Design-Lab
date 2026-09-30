@@ -10,6 +10,8 @@ import { clientServerLesson } from "@/content/client-server";
 import { ArrowRight, DatabaseIcon, MonitorIcon, ServerIcon } from "@/components/ui/icons";
 import { Reveal } from "@/components/ui/reveal";
 import { SectionHeading } from "@/components/ui/section-heading";
+import { ConceptChain } from "@/components/lesson/concept-chain";
+import { LessonPager } from "@/components/lesson/lesson-pager";
 
 export const metadata: Metadata = {
   title: "Client–Server Architecture",
@@ -25,6 +27,7 @@ export default function ClientServerPage() {
   return (
     <article className="lesson-page">
       <div className="page-shell"><LessonHero /></div>
+      <div className="page-shell concept-chain-wrap"><ConceptChain current="01" /></div>
       <nav className="chapter-nav" aria-label="Chapter sections"><div className="page-shell"><span>CHAPTER 01</span><div>{toc.map(([number, label, href]) => <a href={href} key={number}><small>{number}</small>{label}</a>)}</div></div></nav>
 
       <section className="lesson-section page-shell" id="the-problem">
@@ -71,7 +74,7 @@ export default function ClientServerPage() {
       </section>
 
       <section className="lesson-section page-shell" id="challenge">
-        <Reveal><SectionHeading eyebrow="07 · APPLY IT" title="Route the request." copy="A thirty-second challenge to prove the roles are clear." /></Reveal>
+        <Reveal><SectionHeading eyebrow="07 · APPLY IT" title="Route the request." copy="Five short scenarios test dynamic pages, APIs, service-to-service calls, CDN content, and the database boundary." /></Reveal>
         <Reveal delay={0.08}><RouteGame /></Reveal>
       </section>
 
@@ -88,7 +91,7 @@ export default function ClientServerPage() {
         <div className="page-shell"><Reveal><SectionHeading eyebrow="KEY TAKEAWAYS" title="The four-part mental model." /></Reveal>
           <div className="takeaway-grid">{clientServerLesson.takeaways.map(([term, note], index) => <div key={term}><span>0{index + 1}</span><h3>{term}</h3><p>{note}</p></div>)}</div>
           <div className="source-note"><span>SOURCE MAPPING</span><p>This interactive lesson is derived from <a href="https://github.com/ChetanAmritanshu/High-Level-Design/blob/main/01_Client_Server_Architecture.docx" target="_blank" rel="noreferrer"><code>{clientServerLesson.source}</code></a> in the original notes repository. The source note remains unchanged and authoritative for the chapter’s scope.</p></div>
-          <div className="next-topic"><div><small>NEXT CONCEPT · COMING SOON</small><h2>DNS Fundamentals</h2><p>Before a client can ask a server, how does it find the right address?</p></div><span className="next-lock">02 <ArrowRight /></span></div>
+          <LessonPager next={{ number:"02", title:"DNS Fundamentals", href:"/learn/dns", copy:"Before a client can ask a server, how does it find the right address?" }} />
           <Link className="back-to-map" href="/#learning-map"><DatabaseIcon /> Return to the learning map <ArrowRight /></Link>
         </div>
       </section>
