@@ -4,10 +4,11 @@ const concepts = [
   { number: "01", label: "Client / Server", href: "/learn/client-server", question: "Who talks?" },
   { number: "02", label: "DNS", href: "/learn/dns", question: "How are they found?" },
   { number: "03", label: "HTTP / TLS", href: "/learn/http-https-tls", question: "How do they talk safely?" },
-  { number: "04", label: "HTTP Evolution", href: "", question: "How does transport evolve?" },
+  { number: "04", label: "HTTP Evolution", href: "/learn/http-evolution", question: "How does transport evolve?" },
+  { number: "05", label: "Real-Time", href: "", question: "How does data stay live?" },
 ] as const;
 
-export function ConceptChain({ current }: { current: "01" | "02" | "03" }) {
+export function ConceptChain({ current }: { current: "01" | "02" | "03" | "04" }) {
   return (
     <nav className="concept-chain" aria-label="Networking concept sequence">
       <span className="concept-chain__label">CONCEPT CHAIN</span>

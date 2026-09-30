@@ -16,9 +16,9 @@ The current release includes:
 
 - an animated System Lab homepage
 - the complete 30-topic learning map
-- interactive Client–Server, DNS, and HTTP/HTTPS/TLS lessons
+- interactive Client–Server, DNS, HTTP/HTTPS/TLS, and HTTP Evolution lessons
 - request routing, DNS resolution and caching, HTTP message, certificate, and TLS handshake labs
-- three concept-specific, replayable mini-games
+- four concept-specific, replayable mini-games
 - responsive and reduced-motion experiences
 
 ## Source material
@@ -39,6 +39,10 @@ High-Level-Design/02_DNS_Fundamentals.docx
 High-Level-Design/03_HTTP_HTTPS_and_TLS.docx
   → src/content/http-tls.ts
   → src/app/learn/http-https-tls/page.tsx
+
+High-Level-Design/04_HTTP_Evolution_HTTP_1_1_HTTP_2_HTTP_3_QUIC.docx
+  → src/content/http-evolution.ts
+  → src/app/learn/http-evolution/page.tsx
 ```
 
 The original DOCX and PDF files are not parsed at runtime and are not copied into this repository.
