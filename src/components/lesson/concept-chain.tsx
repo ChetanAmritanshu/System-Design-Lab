@@ -9,10 +9,13 @@ const concepts = [
   { number: "06", label: "Load Balancers", href: "/learn/load-balancers", question: "How is traffic spread?" },
   { number: "07", label: "Gateway", href: "/learn/reverse-proxy-api-gateway", question: "How is the edge governed?" },
   { number: "08", label: "Caching", href: "/learn/caching", question: "How is work reused?" },
-  { number: "09", label: "Redis", href: "", question: "How is cache distributed?" },
+  { number: "09", label: "Redis", href: "/learn/cache-architectures-redis", question: "Where does cache live?" },
+  { number: "10", label: "Cache Failures", href: "/learn/cache-invalidation-failures", question: "When do copies break?" },
+  { number: "11", label: "CDN / Edge", href: "/learn/cdn-edge-delivery", question: "How does cache move closer?" },
+  { number: "12", label: "Rate Limiting", href: "", question: "How is demand controlled?" },
 ] as const;
 
-export function ConceptChain({ current }: { current: "01" | "02" | "03" | "04" | "05" | "06" | "07" | "08" }) {
+export function ConceptChain({ current }: { current: "01" | "02" | "03" | "04" | "05" | "06" | "07" | "08" | "09" | "10" | "11" }) {
   const currentIndex = concepts.findIndex((concept) => concept.number === current);
   const start = Math.max(0, Math.min(currentIndex - 2, concepts.length - 5));
   const visible = concepts.slice(start, start + 5);

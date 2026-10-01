@@ -19,7 +19,7 @@ export default function Home() {
             <Link className="primary-cta" href="/learn/client-server">Start with Client → Server <ArrowRight /></Link>
             <a className="secondary-cta" href="#learning-map">Explore the map <ArrowDown /></a>
           </div>
-          <div className="hero-proof"><span><b>30</b> core concepts</span><i /><span><b>07</b> complete systems</span><i /><span><b>08</b> live labs</span></div>
+          <div className="hero-proof"><span><b>30</b> core concepts</span><i /><span><b>07</b> complete systems</span><i /><span><b>11</b> live labs</span></div>
         </div>
         <HeroArchitecture />
         <div className="hero-scroll" aria-hidden="true"><span>SCROLL TO EXPLORE</span><i /></div>
@@ -30,7 +30,7 @@ export default function Home() {
       </section>
 
       <section className="map-section page-shell" id="learning-map">
-        <Reveal><SectionHeading eyebrow="THE LEARNING MAP" title="One system. Thirty pressure points." copy="Follow the dependency trail from a single request to the coordination problems of distributed systems. The first eight interactive lessons are open; the full map shows where every idea eventually connects." /></Reveal>
+        <Reveal><SectionHeading eyebrow="THE LEARNING MAP" title="One system. Thirty pressure points." copy="Follow the dependency trail from a single request to the coordination problems of distributed systems. The first eleven interactive lessons are open; the full map shows where every idea eventually connects." /></Reveal>
         <LearningMap />
       </section>
 
