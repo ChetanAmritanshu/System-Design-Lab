@@ -7,8 +7,8 @@ export function LessonPager({ previous, next }: {
 }) {
   return (
     <div className="lesson-pager">
-      {previous ? <Link className="lesson-pager__previous" href={previous.href}><ArrowRight /><span><small>PREVIOUS · {previous.number}</small><b>{previous.title}</b></span></Link> : <span />}
-      {next.href ? <Link className="lesson-pager__next" href={next.href}><span><small>NEXT · {next.number}</small><b>{next.title}</b><em>{next.copy}</em></span><ArrowRight /></Link> : <div className="lesson-pager__next lesson-pager__next--locked"><span><small>NEXT · {next.number} · COMING SOON</small><b>{next.title}</b><em>{next.copy}</em></span><ArrowRight /></div>}
+      {previous ? <Link className="lesson-pager__previous" href={previous.href} prefetch={false}><ArrowRight /><span><small>PREVIOUS · {previous.number}</small><b>{previous.title}</b></span></Link> : <span />}
+      {next.href ? <Link className="lesson-pager__next" href={next.href} prefetch={false}><span><small>NEXT · {next.number}</small><b>{next.title}</b><em>{next.copy}</em></span><ArrowRight /></Link> : <div className="lesson-pager__next lesson-pager__next--locked"><span><small>NEXT · {next.number} · COMING SOON</small><b>{next.title}</b><em>{next.copy}</em></span><ArrowRight /></div>}
     </div>
   );
 }

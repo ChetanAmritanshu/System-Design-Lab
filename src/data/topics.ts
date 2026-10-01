@@ -18,8 +18,8 @@ const topic = (number: number, title: string, shortTitle = title): Topic => ({
   number: String(number).padStart(2, "0"),
   title,
   shortTitle,
-  slug: number === 1 ? "/learn/client-server" : number === 2 ? "/learn/dns" : number === 3 ? "/learn/http-https-tls" : number === 4 ? "/learn/http-evolution" : "",
-  available: number <= 4,
+  slug: number === 1 ? "/learn/client-server" : number === 2 ? "/learn/dns" : number === 3 ? "/learn/http-https-tls" : number === 4 ? "/learn/http-evolution" : number === 5 ? "/learn/realtime-communication" : number === 6 ? "/learn/load-balancers" : number === 7 ? "/learn/reverse-proxy-api-gateway" : number === 8 ? "/learn/caching" : "",
+  available: number <= 8,
 });
 
 export const topicGroups: TopicGroup[] = [

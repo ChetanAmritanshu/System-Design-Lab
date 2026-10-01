@@ -28,7 +28,7 @@ export function LearningMap() {
             {group.topics.map((item, index) => {
               const content = <><span className="topic-number">{item.number}</span><strong>{item.shortTitle}</strong>{item.available ? <span className="topic-action">Enter lab <ArrowRight /></span> : <span className="coming-soon">Coming soon</span>}</>;
               return item.available ? (
-                <Link className="topic-node topic-node--active" href={item.slug} key={item.number}>{content}</Link>
+                <Link className="topic-node topic-node--active" href={item.slug} prefetch={false} key={item.number}>{content}</Link>
               ) : (
                 <div className="topic-node" key={item.number} aria-label={`${item.title}, coming soon`}><span className="track-dot" style={{ animationDelay: `${index * 120}ms` }} />{content}</div>
               );
