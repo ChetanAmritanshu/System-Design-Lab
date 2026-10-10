@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "./distributed.css";
 
 :root {
   --ink: #eef4f7;

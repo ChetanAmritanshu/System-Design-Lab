@@ -18,10 +18,12 @@ const concepts = [
   { number: "15", label: "Indexing", href: "/learn/database-indexing", question: "How are rows found?" },
   { number: "16", label: "Replication", href: "/learn/replication", question: "How are copies kept?" },
   { number: "17", label: "Sharding", href: "/learn/sharding-partitioning", question: "How is data divided?" },
-  { number: "18", label: "CAP Theorem", href: "", question: "What happens in a partition?" },
+  { number: "18", label: "CAP Theorem", href: "/learn/cap-theorem", question: "What happens in a partition?" },
+  { number: "19", label: "Consistency", href: "/learn/consistency-quorums", question: "How many copies participate?" },
+  { number: "20", label: "Sagas", href: "", question: "How do owners coordinate?" },
 ] as const;
 
-export function ConceptChain({ current }: { current: "01" | "02" | "03" | "04" | "05" | "06" | "07" | "08" | "09" | "10" | "11" | "12" | "13" | "14" | "15" | "16" | "17" }) {
+export function ConceptChain({ current }: { current: "01" | "02" | "03" | "04" | "05" | "06" | "07" | "08" | "09" | "10" | "11" | "12" | "13" | "14" | "15" | "16" | "17" | "18" | "19" }) {
   const currentIndex = concepts.findIndex((concept) => concept.number === current);
   const start = Math.max(0, Math.min(currentIndex - 2, concepts.length - 5));
   const visible = concepts.slice(start, start + 5);

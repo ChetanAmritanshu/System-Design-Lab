@@ -18,8 +18,8 @@ const topic = (number: number, title: string, shortTitle = title): Topic => ({
   number: String(number).padStart(2, "0"),
   title,
   shortTitle,
-  slug: number === 1 ? "/learn/client-server" : number === 2 ? "/learn/dns" : number === 3 ? "/learn/http-https-tls" : number === 4 ? "/learn/http-evolution" : number === 5 ? "/learn/realtime-communication" : number === 6 ? "/learn/load-balancers" : number === 7 ? "/learn/reverse-proxy-api-gateway" : number === 8 ? "/learn/caching" : number === 9 ? "/learn/cache-architectures-redis" : number === 10 ? "/learn/cache-invalidation-failures" : number === 11 ? "/learn/cdn-edge-delivery" : number === 12 ? "/learn/rate-limiting" : number === 13 ? "/learn/sql-acid" : number === 14 ? "/learn/nosql" : number === 15 ? "/learn/database-indexing" : number === 16 ? "/learn/replication" : number === 17 ? "/learn/sharding-partitioning" : "",
-  available: number <= 17,
+  slug: number === 1 ? "/learn/client-server" : number === 2 ? "/learn/dns" : number === 3 ? "/learn/http-https-tls" : number === 4 ? "/learn/http-evolution" : number === 5 ? "/learn/realtime-communication" : number === 6 ? "/learn/load-balancers" : number === 7 ? "/learn/reverse-proxy-api-gateway" : number === 8 ? "/learn/caching" : number === 9 ? "/learn/cache-architectures-redis" : number === 10 ? "/learn/cache-invalidation-failures" : number === 11 ? "/learn/cdn-edge-delivery" : number === 12 ? "/learn/rate-limiting" : number === 13 ? "/learn/sql-acid" : number === 14 ? "/learn/nosql" : number === 15 ? "/learn/database-indexing" : number === 16 ? "/learn/replication" : number === 17 ? "/learn/sharding-partitioning" : number === 18 ? "/learn/cap-theorem" : number === 19 ? "/learn/consistency-quorums" : "",
+  available: number <= 19,
 });
 
 export const topicGroups: TopicGroup[] = [
