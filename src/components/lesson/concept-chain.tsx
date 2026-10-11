@@ -20,10 +20,13 @@ const concepts = [
   { number: "17", label: "Sharding", href: "/learn/sharding-partitioning", question: "How is data divided?" },
   { number: "18", label: "CAP Theorem", href: "/learn/cap-theorem", question: "What happens in a partition?" },
   { number: "19", label: "Consistency", href: "/learn/consistency-quorums", question: "How many copies participate?" },
-  { number: "20", label: "Sagas", href: "", question: "How do owners coordinate?" },
+  { number: "20", label: "Sagas", href: "/learn/distributed-transactions-sagas", question: "How do owners coordinate?" },
+  { number: "21", label: "Queues / Logs", href: "/learn/message-queues-kafka-rabbitmq", question: "How is work handed off?" },
+  { number: "22", label: "Streams", href: "/learn/stream-processing", question: "How are events computed?" },
+  { number: "23", label: "Microservices", href: "", question: "How are services composed?" },
 ] as const;
 
-export function ConceptChain({ current }: { current: "01" | "02" | "03" | "04" | "05" | "06" | "07" | "08" | "09" | "10" | "11" | "12" | "13" | "14" | "15" | "16" | "17" | "18" | "19" }) {
+export function ConceptChain({ current }: { current: "01" | "02" | "03" | "04" | "05" | "06" | "07" | "08" | "09" | "10" | "11" | "12" | "13" | "14" | "15" | "16" | "17" | "18" | "19" | "20" | "21" | "22" }) {
   const currentIndex = concepts.findIndex((concept) => concept.number === current);
   const start = Math.max(0, Math.min(currentIndex - 2, concepts.length - 5));
   const visible = concepts.slice(start, start + 5);

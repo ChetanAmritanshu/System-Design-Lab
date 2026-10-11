@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "./distributed.css";
+@import "./event-systems.css";
 
 :root {
   --ink: #eef4f7;
