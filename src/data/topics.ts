@@ -18,8 +18,8 @@ const topic = (number: number, title: string, shortTitle = title): Topic => ({
   number: String(number).padStart(2, "0"),
   title,
   shortTitle,
-  slug: number === 1 ? "/learn/client-server" : number === 2 ? "/learn/dns" : number === 3 ? "/learn/http-https-tls" : number === 4 ? "/learn/http-evolution" : number === 5 ? "/learn/realtime-communication" : number === 6 ? "/learn/load-balancers" : number === 7 ? "/learn/reverse-proxy-api-gateway" : number === 8 ? "/learn/caching" : number === 9 ? "/learn/cache-architectures-redis" : number === 10 ? "/learn/cache-invalidation-failures" : number === 11 ? "/learn/cdn-edge-delivery" : number === 12 ? "/learn/rate-limiting" : number === 13 ? "/learn/sql-acid" : number === 14 ? "/learn/nosql" : number === 15 ? "/learn/database-indexing" : number === 16 ? "/learn/replication" : number === 17 ? "/learn/sharding-partitioning" : number === 18 ? "/learn/cap-theorem" : number === 19 ? "/learn/consistency-quorums" : number === 20 ? "/learn/distributed-transactions-sagas" : number === 21 ? "/learn/message-queues-kafka-rabbitmq" : number === 22 ? "/learn/stream-processing" : number === 23 ? "/learn/microservices" : number === 24 ? "/learn/service-discovery-grpc" : number === 25 ? "/learn/event-driven-cqrs-event-sourcing" : number === 26 ? "/learn/distributed-coordination" : number === 27 ? "/learn/reliability-engineering" : number === 28 ? "/learn/observability" : "",
-  available: number <= 28,
+  slug: number === 1 ? "/learn/client-server" : number === 2 ? "/learn/dns" : number === 3 ? "/learn/http-https-tls" : number === 4 ? "/learn/http-evolution" : number === 5 ? "/learn/realtime-communication" : number === 6 ? "/learn/load-balancers" : number === 7 ? "/learn/reverse-proxy-api-gateway" : number === 8 ? "/learn/caching" : number === 9 ? "/learn/cache-architectures-redis" : number === 10 ? "/learn/cache-invalidation-failures" : number === 11 ? "/learn/cdn-edge-delivery" : number === 12 ? "/learn/rate-limiting" : number === 13 ? "/learn/sql-acid" : number === 14 ? "/learn/nosql" : number === 15 ? "/learn/database-indexing" : number === 16 ? "/learn/replication" : number === 17 ? "/learn/sharding-partitioning" : number === 18 ? "/learn/cap-theorem" : number === 19 ? "/learn/consistency-quorums" : number === 20 ? "/learn/distributed-transactions-sagas" : number === 21 ? "/learn/message-queues-kafka-rabbitmq" : number === 22 ? "/learn/stream-processing" : number === 23 ? "/learn/microservices" : number === 24 ? "/learn/service-discovery-grpc" : number === 25 ? "/learn/event-driven-cqrs-event-sourcing" : number === 26 ? "/learn/distributed-coordination" : number === 27 ? "/learn/reliability-engineering" : number === 28 ? "/learn/observability" : number === 29 ? "/learn/idempotency-backpressure" : number === 30 ? "/learn/system-design-communication" : "",
+  available: number <= 30,
 });
 
 export const topicGroups: TopicGroup[] = [
@@ -96,13 +96,13 @@ export const topicGroups: TopicGroup[] = [
 ];
 
 export const caseStudies = [
-  { title: "URL Shortener", mark: "URL", problem: "Long link → short link → redirect" },
-  { title: "Distributed Rate Limiter", mark: "429", problem: "Should this request be allowed?" },
-  { title: "WhatsApp", mark: "MSG", problem: "Alice sends “Hello” to Bob" },
-  { title: "YouTube", mark: "PLAY", problem: "Creator uploads. Viewer presses play." },
-  { title: "Uber", mark: "GEO", problem: "Find and reserve a nearby driver" },
-  { title: "Payment System", mark: "PAY", problem: "Move money without guessing state" },
-  { title: "Notification System", mark: "PING", problem: "Something happened → tell the user" },
+  { title: "URL Shortener", mark: "URL", problem: "Long link → short link → redirect", slug: "/case-studies/url-shortener", available: true },
+  { title: "Distributed Rate Limiter", mark: "429", problem: "Should this request be allowed?", slug: "/case-studies/distributed-rate-limiter", available: true },
+  { title: "WhatsApp / Real-Time Chat", mark: "MSG", problem: "Alice sends “Hello” to Bob", slug: "/case-studies/realtime-chat", available: true },
+  { title: "YouTube", mark: "PLAY", problem: "Creator uploads. Viewer presses play.", slug: "", available: false },
+  { title: "Uber", mark: "GEO", problem: "Find and reserve a nearby driver", slug: "", available: false },
+  { title: "Payment System", mark: "PAY", problem: "Move money without guessing state", slug: "", available: false },
+  { title: "Notification System", mark: "PING", problem: "Something happened → tell the user", slug: "", available: false },
 ] as const;
 
 export const scaleRevelations = [

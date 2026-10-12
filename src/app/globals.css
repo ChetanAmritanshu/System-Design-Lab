@@ -2,6 +2,7 @@
 @import "./distributed.css";
 @import "./event-systems.css";
 @import "./production-systems.css";
+@import "./finale-case-studies.css";
 
 :root {
   --ink: #eef4f7;

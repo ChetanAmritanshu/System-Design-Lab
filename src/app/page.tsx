@@ -19,7 +19,7 @@ export default function Home() {
             <Link className="primary-cta" href="/learn/client-server">Start with Client → Server <ArrowRight /></Link>
             <a className="secondary-cta" href="#learning-map">Explore the map <ArrowDown /></a>
           </div>
-          <div className="hero-proof"><span><b>30</b> core concepts</span><i /><span><b>07</b> complete systems</span><i /><span><b>28</b> live labs</span></div>
+          <div className="hero-proof"><span><b>30 / 30</b> fundamentals</span><i /><span><b>03</b> case studies</span><i /><span><b>33</b> live labs</span></div>
         </div>
         <HeroArchitecture />
         <div className="hero-scroll" aria-hidden="true"><span>SCROLL TO EXPLORE</span><i /></div>
@@ -30,7 +30,7 @@ export default function Home() {
       </section>
 
       <section className="map-section page-shell" id="learning-map">
-        <Reveal><SectionHeading eyebrow="THE LEARNING MAP" title="One system. Thirty pressure points." copy="Follow the dependency trail from a single request to production diagnosis. The first twenty-eight interactive lessons are open; Topics 29–30 remain the next locked steps." /></Reveal>
+        <Reveal><SectionHeading eyebrow="PART I · SYSTEM DESIGN FUNDAMENTALS" title="Thirty pressure points. Complete." copy="Follow the dependency trail from a single request through production safety and design communication. All 30 interactive fundamentals are now open." /></Reveal>
         <LearningMap />
       </section>
 
@@ -43,7 +43,7 @@ export default function Home() {
       </section>
 
       <section className="case-section page-shell" id="case-studies">
-        <Reveal><div className="case-heading"><SectionHeading eyebrow="COMPLETE SYSTEMS" title="Put the primitives under pressure." copy="The case studies are where fundamentals collide. Each one begins with a human action—not a pre-drawn architecture." /><span className="case-status">07 SYSTEMS · PREVIEW</span></div></Reveal>
+        <Reveal><div className="case-heading"><SectionHeading eyebrow="PART II · COMPLETE SYSTEM DESIGN CASE STUDIES" title="Derive the architecture." copy="Start tiny, estimate pressure, find the bottleneck, break the system, and evolve it one justified decision at a time." /><span className="case-status">03 LIVE · 04 COMING SOON</span></div></Reveal>
         <Reveal delay={0.08}><CaseStudyGrid /></Reveal>
       </section>
 
