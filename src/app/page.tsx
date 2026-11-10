@@ -19,7 +19,7 @@ export default function Home() {
             <Link className="primary-cta" href="/learn/client-server">Start with Client → Server <ArrowRight /></Link>
             <a className="secondary-cta" href="#learning-map">Explore the map <ArrowDown /></a>
           </div>
-          <div className="hero-proof"><span><b>30 / 30</b> fundamentals</span><i /><span><b>03</b> case studies</span><i /><span><b>33</b> live labs</span></div>
+          <div className="hero-proof"><span><b>30 / 30</b> fundamentals</span><i /><span><b>04</b> case studies</span><i /><span><b>34</b> learning journeys</span></div>
         </div>
         <HeroArchitecture />
         <div className="hero-scroll" aria-hidden="true"><span>SCROLL TO EXPLORE</span><i /></div>
@@ -43,7 +43,7 @@ export default function Home() {
       </section>
 
       <section className="case-section page-shell" id="case-studies">
-        <Reveal><div className="case-heading"><SectionHeading eyebrow="PART II · COMPLETE SYSTEM DESIGN CASE STUDIES" title="Derive the architecture." copy="Start tiny, estimate pressure, find the bottleneck, break the system, and evolve it one justified decision at a time." /><span className="case-status">03 LIVE · 04 COMING SOON</span></div></Reveal>
+        <Reveal><div className="case-heading"><SectionHeading eyebrow="PART II · COMPLETE SYSTEM DESIGN CASE STUDIES" title="Derive the architecture." copy="Start tiny, estimate pressure, find the bottleneck, break the system, and evolve it one justified decision at a time." /><span className="case-status">04 LIVE · 03 COMING SOON</span></div></Reveal>
         <Reveal delay={0.08}><CaseStudyGrid /></Reveal>
       </section>
 

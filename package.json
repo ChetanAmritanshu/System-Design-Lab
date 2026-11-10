@@ -4,10 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "build:pages": "cross-env GITHUB_PAGES=true next build",
+    "build": "next build && node scripts/normalize-static-segments.mjs",
+    "build:pages": "cross-env GITHUB_PAGES=true next build && node scripts/normalize-static-segments.mjs",
     "lint": "eslint .",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "test:payments": "node --test tests/payments.test.mjs tests/static-export.test.mjs"
   },
   "dependencies": {
     "motion": "13.4.6",
