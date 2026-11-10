@@ -33,6 +33,8 @@ jobs:
         run: npm run lint
       - name: Typecheck
         run: npm run typecheck
+      - name: Payment simulation invariants
+        run: npm run test:payments
       - name: Build static site
         run: npm run build:pages
       - name: Upload static export

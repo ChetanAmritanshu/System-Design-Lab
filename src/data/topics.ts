@@ -99,9 +99,9 @@ export const caseStudies = [
   { title: "URL Shortener", mark: "URL", problem: "Long link → short link → redirect", slug: "/case-studies/url-shortener", available: true },
   { title: "Distributed Rate Limiter", mark: "429", problem: "Should this request be allowed?", slug: "/case-studies/distributed-rate-limiter", available: true },
   { title: "WhatsApp / Real-Time Chat", mark: "MSG", problem: "Alice sends “Hello” to Bob", slug: "/case-studies/realtime-chat", available: true },
+  { title: "Payment System", mark: "PAY", problem: "One click. One financial effect.", slug: "/case-studies/payment-system", available: true },
   { title: "YouTube", mark: "PLAY", problem: "Creator uploads. Viewer presses play.", slug: "", available: false },
   { title: "Uber", mark: "GEO", problem: "Find and reserve a nearby driver", slug: "", available: false },
-  { title: "Payment System", mark: "PAY", problem: "Move money without guessing state", slug: "", available: false },
   { title: "Notification System", mark: "PING", problem: "Something happened → tell the user", slug: "", available: false },
 ] as const;
 
